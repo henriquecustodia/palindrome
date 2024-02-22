@@ -1,0 +1,16 @@
+{
+  "name": "palindrome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "test": "ts-node-test **/*.test.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "ts-node-test": "^0.4.3"
+  }
+}
