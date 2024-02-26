@@ -1,9 +1,9 @@
 const toLowerCase = (word: string) => word.toLocaleLowerCase();
-const removeWhitespaces = (word: string) => word.replace(/ /g, "");
+const removeNonAlphanumerics  = (word: string) => word.replace(/[^a-zA-Z0-9]/g, "");
 const toArray = (word: string) => word.split("");
 
 export function isPalindrome(word: string): boolean {
-  const wordAsArray = toArray(removeWhitespaces(toLowerCase(word)))
+  const wordAsArray = toArray(removeNonAlphanumerics(toLowerCase(word)))
 
   const middleIndex = Math.floor(wordAsArray.length / 2) - 1;
 

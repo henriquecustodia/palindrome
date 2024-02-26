@@ -17,17 +17,29 @@ const validPalindromeSentences = [
   "Madam",
   "Racecar",
   "Hannah",
+  "A man, a plan, a canal, Panama!",
+  "A man, a plan, a canal, Panama",
+  "Madam, in Eden, I'm Adam.",
+  "Madam, in Eden, I'm Adam",
+  "3993",
+  "378656873",
+  "3786-5-6873",
+  "3786 5  6873",
 ];
 
 const invalidPalindromeSentences = [
   "Never odd or eeven",
   "Never odd or evene",
+  "A man, a plan, a canal, Panaama",
+  "Madam, in Eden, I'm Addam",
   "job",
   "ferrari",
   "lLive not on evil",
   "Madama",
   "Racecarr",
   "Hannah Montana",
+  "3933",
+  "378656893",
 ];
 
 describe("isPalindrome()", () => {
